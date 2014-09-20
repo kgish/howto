@@ -5,19 +5,25 @@
 Define a gemset for the project:
 
     $ rvm use 1.9.3-p448@my_project --create
-    - or -
+
+or
+
     $ rvm use 2.0.0-p247@my_project --create
 
 Install rails (rails only):
 
     $ gem install rails -v 3.2.8
-    - or -
+
+or
+
     $ gem install rails -v 4.0.1
 
 Create the project directory:
 
     $ rails new my_project (rails only)
-    - or -
+
+or
+
     $ mkdir my_project
 
 Add the .rvmrc file:
@@ -60,7 +66,7 @@ Modify Gemfile (rails only):
     gem 'jquery-rails', '2.0.2'
     <EOF>
 
-    - or -
+or
 
     $ cat Gemfile (ruby 2.0.0)
     source 'https://rubygems.org'
@@ -89,13 +95,17 @@ Run bundler (rails only)
     $ bundle install --without production
     $ bundle update
     $ bundle install
-    - or -
+
+or
+
     Tools > Bundler > Install
 
 Setup git repository:
 
     $ git init
-    -or-
+
+or
+
     VCS > Import into Version Control > Create Git Repository
     Select my_project directory
     OK
@@ -131,7 +141,9 @@ Commit initial version:
     $ touch README.md # see README.rdoc
     $ git add .
     $ git commit -m "Initial commit"
-    - or -
+
+or
+
     Create README.md file
     Select files to add to repository in Project pane 
     VCS > Git > Add
