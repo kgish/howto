@@ -2,7 +2,7 @@
 
 (rails only) = only needed for Rails projects.
 
-Define a gemset for the project:
+## Define a gemset for the project:
 
     $ rvm use 1.9.3-p448@my_project --create
 
@@ -10,7 +10,7 @@ or
 
     $ rvm use 2.0.0-p247@my_project --create
 
-Install rails (rails only):
+## Install rails (rails only):
 
     $ gem install rails -v 3.2.8
 
@@ -18,7 +18,7 @@ or
 
     $ gem install rails -v 4.0.1
 
-Create the project directory:
+## Create the project directory:
 
     $ rails new my_project (rails only)
 
@@ -26,24 +26,24 @@ or
 
     $ mkdir my_project
 
-Add the .rvmrc file:
+## Add the .rvmrc file:
 
     $ cd my_project
     $ rvm --rvmrc ruby-1.9.3-p448@my_project
     $ rvm rvmrc trust `pwd`
     $ rvm rvmrc warning ignore  `pwd`/.rvmrc
 
-Start Rubymine in project directory:
+## Start Rubymine in project directory:
 
     $ mine .
     (ignore git warnings)
 
-Ruby SDK and Gems:
+## Ruby SDK and Gems:
 
     File > Settings ... > Ruby SDK and Gems
     Ruby SDK = 'RVM: ruby-1.9.3-p448[my_project]'
 
-Modify Gemfile (rails only):
+## Modify Gemfile (rails only):
     
     $ cat Gemfile (ruby 1.9.3)
     source 'https://rubygems.org'
@@ -90,7 +90,7 @@ or
       gem 'sdoc', '0.3.20', require: false
     end
 
-Run bundler (rails only)
+## Run bundler (rails only)
 
     $ bundle install --without production
     $ bundle update
@@ -100,7 +100,7 @@ or
 
     Tools > Bundler > Install
 
-Setup git repository:
+## Setup git repository:
 
     $ git init
 
@@ -111,7 +111,7 @@ or
     OK
     Answer Yes
 
-Create the .gitignore file:
+## Create the .gitignore file:
 
     $ cat .gitignore
     # Ignore bundler config.
@@ -136,7 +136,7 @@ Create the .gitignore file:
     .secret 
     <EOF>
 
-Commit initial version:
+## Commit initial version:
 
     $ touch README.md # see README.rdoc
     $ git add .
@@ -151,7 +151,7 @@ or
     Right click > Commit Changes...
     Add comment then OK
 
-Create GitHub repositoy
+## Create GitHub repositoy
 
     Go to https://github.com/kgish
     Create a new repo (top right of kgish)
@@ -161,6 +161,6 @@ Create GitHub repositoy
     $ git remote add origin https://github.com/kgish/my_project.git
     $ git push -u origin master
 
-Start Rubymine:
+## Start Rubymine:
 
     $ mine .
